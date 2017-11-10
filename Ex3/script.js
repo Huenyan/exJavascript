@@ -22,7 +22,8 @@ function calcular(){
     }
 
     imc = (peso/(altura*altura));
-    
+    imc = Math.round(imc * 100) / 100;
+
     if (imc < 16){
         classi = "Magreza grave";
         color = "#C00000";

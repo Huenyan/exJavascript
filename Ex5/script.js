@@ -10,7 +10,7 @@ function troca() {
     var sel = document.getElementById("estados");
     var opcao = sel.options[sel.selectedIndex].value;
     var nome;
-    
+
     switch(opcao){
         case "AL":
             nome = "Alagoas";
@@ -43,5 +43,4 @@ function troca() {
 
     document.getElementById("nome").innerHTML = "Nome: " + nome;
     document.getElementById("bandeira").src = opcao + ".png";
-    
 }
