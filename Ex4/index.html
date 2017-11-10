@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ex4</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-1">
+
+            </div>
+
+            <div class="col-sm-4">
+                <table class="table">
+                    <tr>
+                        <th>Gravidade</th>
+                        <th>Planeta</th>
+                    </tr>
+                    <tr>
+                        <td>0,37</td>
+                        <td>Mercúrio</td>
+                    </tr>
+                    <tr>
+                        <td>0,88</td>
+                        <td>Vênus</td>
+                    </tr>
+                    <tr>
+                        <td>0,38</td>
+                        <td>Marte</td>
+                    </tr>
+                    <tr>
+                        <td>2,64</td>
+                        <td>Júpiter</td>
+                    </tr>
+                    <tr>
+                        <td>1,15</td>
+                        <td>Saturno</td>
+                    </tr>
+                    <tr>
+                        <td>1,17</td>
+                        <td>Urano</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-2">
+                <input type="number" name="peso" id="peso" placeholder="Peso na Terra" class="form-control">
+            </div>
+            <div class="col-sm-2">
+                <select class="form-control" id="sel">
+                    <option value="0">Mercúrio</option>
+                    <option value="1">Vênus</option>
+                    <option value="2">Marte</option>
+                    <option value="3">Júpiter</option>
+                    <option value="4">Saturno</option>
+                    <option value="5">Urano</option>
+                </select>
+            </div>
+            <div class="col-sm-1">
+                <button class="btn" onclick="calcular()">Calcular</button>
+            </div>
+            <div class="col-sm-3">
+                <p id="pesoPlaneta">Peso no planeta escolhido: </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
